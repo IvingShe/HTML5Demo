@@ -39,19 +39,17 @@
               document.write( "<br></br>");
 
             /**
-
              * 转义字符
              */ 
              var mesaage ="回车换行" + "\n"+ "相当于tab健" + "\t" + "换行" + "\r"
             // alert(mesaage);
 
 
-			/*
           var date = new Date();
           date.getDate;
           date.getUTCFullYear();
           data.getDate();
-*/
+
 
            /*
              * 测试function功能1：运行在数据类型方面
@@ -68,6 +66,17 @@
             document.write("<li>"+"购买日期："+mycar.buyDate);
            }
            document.write( "<br></br>");
+
+
+           document.write( "-----"+ "<br>");
+         /**
+          * 变量形式函数定义
+         */
+         var circe= new Function("r", "return r*r"); 
+         var rCirce= 10;
+         var result = circe(rCirce);
+       
+         document.write( " 变量形式函数定义:"+result+ "<br>");
 
           /**
            * 
@@ -86,7 +95,16 @@
 
          </script>
 
+
+
+
+
+
     </head>
+
+
+
+
 
     <body>
 
