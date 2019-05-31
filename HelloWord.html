@@ -34,7 +34,7 @@
             */
               var a=3;
               var b=4; 
-              var sum =3+4;
+              var sum =3+4;			 
               document.write("sum= "+sum+ "<br>");
               document.write( "<br></br>");
 
@@ -43,16 +43,11 @@
              */ 
              var mesaage ="回车换行" + "\n"+ "相当于tab健" + "\t" + "换行" + "\r"
             // alert(mesaage);
-
-
-          var date = new Date();
-          date.getDate;
-          date.getUTCFullYear();
-          data.getDate();
+        
 
 
            /*
-             * 测试function功能1：运行在数据类型方面
+          * 测试function功能1：运行在数据类型方面
           */
            function Car(owner,brand,buyDate){
              this.owner= owner;
@@ -68,15 +63,8 @@
            document.write( "<br></br>");
 
 
-           document.write( "-----"+ "<br>");
-         /**
-          * 变量形式函数定义
-         */
-         var circe= new Function("r", "return r*r"); 
-         var rCirce= 10;
-         var result = circe(rCirce);
-       
-         document.write( " 变量形式函数定义:"+result+ "<br>");
+          
+      
 
           /**
            * 
@@ -92,7 +80,32 @@
           }else {
             document.write( "undefined ! null"+ "<br>");
           }
-
+		 document.write( "<br></br>");
+		  
+		    /**
+          * 函数的变量定义形式
+         */
+         var circe= new Function("r", "return r*r"); 
+         var rCirce= 10;
+         var result = circe(rCirce);
+       
+         document.write( "  函数的变量定义形式:"+result+ "<br>");
+		 
+        /**
+         * 
+         *函数的返回值 可以是另外一个函数 
+        */		
+         function getSum(){		 
+		   function  sum(a,b){
+			return a+b;
+		   }
+		   return sum;
+		 }
+		 var sum2 = getSum();
+		 var result2 = sum2(1,2);		 
+        document.write( "  返回值函数的调用:"+result2+ "<br>");
+		 
+		 
          </script>
 
 
